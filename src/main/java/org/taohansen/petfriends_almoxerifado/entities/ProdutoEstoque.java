@@ -17,6 +17,9 @@ public class ProdutoEstoque {
     private LocalDate dataEntrada;
     private LocalDate dataValidade;
 
+    @Embedded
+    private Dimensoes dimensoes;
+
     private String fornecedorId;
 
     public boolean isValidProduto() {
